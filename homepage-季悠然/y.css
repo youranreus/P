@@ -1,0 +1,146 @@
+
+ @font-face {
+   font-family: 'poppin';
+   src : url('poppin.ttf');
+ }
+*{
+    /* color: rgb(34, 34, 34); */
+    font: 14px "poppin",BlinkMacSystemFont, "Hiragino Sans GB", "Microsoft YaHei", 微软雅黑, sans-serif;
+}
+::selection {
+    background: rgba(0,149,255,.1);
+}
+html::-webkit-scrollbar {
+	height:8px;
+	width:8px
+}
+
+::-webkit-scrollbar-track-piece{
+
+}
+html::-webkit-scrollbar-thumb {
+	-webkit-box-shadow:inset 1px 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.07);
+	background-clip:padding-box;
+	background-color:gray;
+	min-height:40px;
+	padding-top:100px;
+	border-radius:4px
+}
+html::-webkit-scrollbar-thumb:hover,html::-webkit-scrollbar-thumb:active {
+	background-color:#b3b3b3
+}
+html::-webkit-scrollbar,html *::-webkit-scrollbar {
+	height:8px;
+	width:8px;
+}
+html::-webkit-scrollbar-thumb,html *::-webkit-scrollbar-thumb {
+	-webkit-box-shadow:inset 1px 1px 0 rgba(0,0,0,0.1),inset 0 -1px 0 rgba(0,0,0,0.07);
+	background-clip:padding-box;
+	background-color:#696969;
+	min-height:40px;
+	padding-top:100px;
+	border-radius:4px
+}
+#main{
+  width:800px;
+  margin: 100px auto;
+  position: relative;
+}
+#avatar{
+  height:210px;
+  width: 210px;
+  display: block;
+  margin:0 auto;
+  border-radius: 50%;
+  box-shadow: 0 0.5em 2em #eef7ff;
+  transition: all 1.0s;
+}
+#avatar-container{
+  width:400px;
+  margin:0 auto;
+  position: relative;
+}
+#avatar:hover{
+	transform: rotate(360deg);
+  box-shadow: 0px 0px 16px rgba(0,0,0,0.2);
+}
+#bb{
+  position: absolute;
+  padding: 12px;
+  color:#333;
+  font-size: 14px;
+  line-height: 1.42857143;
+  background-color: #F5F5F5;
+  border-radius: 8px;
+  display: none;
+  overflow: hidden;
+  top:0;
+  right: 0;
+  box-shadow: 0px 0px 16px rgba(0,0,0,0.2);
+}
+.display{
+  display: inline-block!important;
+}
+#title{
+  font-size: 4em;
+  font-weight: 200;
+  margin:0;
+  margin-top:10px;
+  text-align: center;
+  letter-spacing: 8px;
+}
+#title-des{
+  color:#919191;
+  text-align: center;
+  font-size: 2em;
+  margin: 0;
+  font-weight: 100;
+  position: relative;
+  top:-1em;
+}
+#content{
+  margin-top:100px;
+  color:#666;
+}
+#content p{
+  font-size:20px;
+  font-weight: 200;
+  padding: 10px 0;
+  margin:0;
+}
+.p-inv{
+  font-size: 15px;
+  opacity: 0.3;
+  margin: .8em 0 0 -.5em;
+  position: absolute;
+}
+small,del{
+  font-size: smaller;
+  font-weight: 200;
+}
+a{
+  text-decoration: none;
+  color: #07f;
+}
+.invisible{
+  display: none;
+  transition: all .3s ease;
+}
+.hover{
+  font-size:20px;
+  font-weight: 200;
+  padding: 10px 0;
+  margin:0;
+}
+.hover:hover+.invisible{
+  display: block;
+}
+.invisible:hover{
+  display: block;
+}
+@media screen and (max-width: 768px) {
+	#main{width:95%}
+  #avatar-container{
+    width:100%;
+  }
+}
