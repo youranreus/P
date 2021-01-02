@@ -6,7 +6,7 @@
 let app = new Vue({
     el: '#wrapper',
     data:{
-        apiUrl: 'https://妹.space',
+        apiUrl: 'https://i.exia.xyz',
         sites: [],
         blog: [],
         status: [],
