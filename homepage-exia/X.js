@@ -17,7 +17,7 @@ let app = new Vue({
         getBlog: function (){
             let that = this;
             that.$nextTick(() => {
-                axios.get(that.apiUrl + '/X/getBlogRSS?url=http://gundam.exia.xyz/feed')
+                axios.get(that.apiUrl + '/X/getBlogRSS?url=https://gundam.exia.xyz/feed')
                     .then((response) => {
                         that.blog = response.data;
                         that.gotBlog = true;
